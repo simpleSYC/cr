@@ -1,0 +1,10 @@
+K=[
+K_0=["kecap","100 g","vitaminka","najakiot kecap",2,"vkus","diet","cili","pikant","sport","x",50.66,55],
+K_1=["kecap","123 g","vitaminka","najakiot nesto ",2,"vkus","diet","cili","pikant","sport","x",70,77],
+K_2=["kecap","155 g","vitaminka","diatelnijot sok",4,"vkus","diet","cili","pikant","sport","x",15,121],
+K_3=["kecap","100 g","vitaminka","aaada",2,"vkus","diet","cili","pikant","sport","x",86,35],
+K_4=["kecap","100 g","vitaminka","dasda",2,"vkus","diet","cili","pikant","sport","x",68],
+K_5=["kecap","100 g","vitaminka","asddas ",3,"vkus","diet","cili","pikant","sport","x",57],
+K_6=["kecap","100 g","vitaminka","asddas ",2,"vkus","diet","cili","pikant","sport","x",12],
+K_7=["kecap","100 g","vitaminka","asddas ",4,"vkus","diet","cili","pikant","sport","x",45],
+K_8=["kecap","100 g","vitaminka","asddas ",4,"vkus","diet","cili","pikant","sport","x",79]]
