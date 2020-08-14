@@ -1,3 +1,6 @@
+function DKMT_RDY(){
+document.getElementsByClassName("btn btn-info sc-cart-checkout")[0].addEventListener("click", openModal);}
+ 
 
 // Modal Image Gallery
 function onClick(element) {
@@ -20,50 +23,7 @@ function toggleFunction() {
 }
 
 
-///ova zafotochange
-var MMR;
-var  NVimg;
-var SPOJKA;
 
-function MST_FOTOTO(N,a){ MMR=a.parentElement.parentElement.parentElement.parentElement.parentElement.children[0].src;
- NVimg=MMR.slice(0,MMR.length-5);
- SPOJKA=NVimg+N+".jpg";
-a.parentElement.parentElement.parentElement.parentElement.parentElement.children[0].src=SPOJKA;}
-
-// ova e za bestelungsoko kopce
-function ofON(a){
-	if(a.innerHTML=="ofen bestelung"){
-		a.innerHTML="schlisen bestelung";	OFon(true);}else{
-		a.innerHTML="ofen bestelung";		OFon(false);}
-	
-}
-var SLIKICITE = document.getElementById("FTKI");
-var KUPE = document.getElementById("KUPEC");
-var KUPE_2 = document.getElementById("smartcart");
-SLIKICITE.style	="display:block";
-KUPE.style		="display:none";
-KUPE_2.style		="display:none";
-function OFon(a){
-	if(a){
-	SLIKICITE.style	="display:none";
-	KUPE.style		="display:block";
-	KUPE_2.style	="display:block";}else{
-	SLIKICITE.style	="display:block";
-	KUPE.style		="display:none";
-	KUPE_2.style	="display:none";}
-}
-
-
-
-
-//ova e event listner
-
-
-function DKMT_RDY(){
-document.getElementsByClassName("btn btn-info sc-cart-checkout")[0].addEventListener("click", OPMD); 
-document.getElementsByClassName("btn btn-info sc-cart-checkout")[0].addEventListener("click", openModal); 
-
- }
 
 
 

@@ -1,5 +1,3 @@
-
-filterSelection("all")
 function filterSelection(c) {
   var x, i;
   x = document.getElementsByClassName("filterDiv");
@@ -41,3 +39,62 @@ for (var i = 0; i < btns.length; i++) {
     this.className += " active";
   });
 }
+
+
+
+
+
+
+
+///////////
+
+var INFO_angebote=document.getElementsByClassName("info")[0];
+var INFO_info=document.getElementsByClassName("info")[1];
+function shIFO(a){if(a==true){
+INFO_angebote.style="display:block;";
+INFO_info.style="display:block;";}else{
+INFO_angebote.style="display:none;";
+INFO_info.style="display:none;";}}
+
+
+shIFO(true);
+
+
+////////////////////////////
+
+
+
+var QQQ=document.getElementsByTagName("aside")[0];var qqq=document.getElementById("qqQQ");
+
+function openModal() { 
+if(document.getElementsByClassName("btn btn-info sc-cart-checkout")[0].classList.contains("disabled")==false){OPMD();
+  
+sminka(true);
+document.getElementById("contact").style.display = "block";var CLN=QQQ.cloneNode(true);qqQQ.appendChild(CLN);
+
+qqQQ.children[0].children[2].children[3].children[1].remove();
+qqQQ.children[0].children[1].style="display:none;";
+
+
+document.getElementsByClassName("*PYP")[0].style="display:none;";
+document.getElementsByClassName("*PYP")[1].style="display:none;";
+
+
+}}
+function closeModal() { sminka(false);
+document.getElementById("contact").style.display = "none";
+
+document.getElementsByTagName("aside")[1].remove();
+
+document.getElementsByClassName("*PYP")[0].style="display:block;";}
+
+function sminka(a){
+var NBR=document.getElementsByClassName("sc-cart-item-qty");
+var XX=document.getElementsByClassName("sc-cart-remove");
+if(a==true){
+for(i=0;i<XX.length;i++){XX[i].style="display:none;";}
+for(i=0;i<NBR.length;i++){NBR[i].type="text";NBR[i].disabled=true;}
+}else{
+for(i=0;i<XX.length;i++){XX[i].style="display:block;";}
+for(i=0;i<NBR.length;i++){NBR[i].type="number";NBR[i].disabled=false;}}}
+

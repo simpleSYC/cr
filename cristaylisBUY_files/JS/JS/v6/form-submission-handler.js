@@ -109,6 +109,7 @@ var Emlot=data.email;
 		
 		
 		document.getElementById("KOPCEppl").style.display="none";
+		document.getElementById("begrus").style.display="none";
 		FRM.style.display="none";
 		
 		  
