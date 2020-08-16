@@ -16,7 +16,10 @@ ID_14=["","","",""],
 ID_15=["","","",""],
 ID_16=["","","",""],
 ID_17=["","","",""],
-ID_18=["","","",""]]; var q;
+ID_18=["","","",""],
+ID_19=["","","",""],
+ID_20=["","","",""],
+ID_21=["","","",""]]; var q;
 
 function MESTI_FOTKITE(a){var o;if(a<9){if(o!="0"){o="0"}}else{if(o!=""){o=""}}
 for(i=0;i<4;i++){// za kako setings da se zapazi dimenzite w /h od originalkite fotki

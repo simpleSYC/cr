@@ -169,6 +169,9 @@
             var mi = this;
             // Capture add to cart button events
             $(this.options.addCartSelector).on("click", function (e) {
+				
+				ceni(this);
+				
                 e.preventDefault();
                 var p = mi._getProductDetails($(this));
                 p = mi._addToCart(p);

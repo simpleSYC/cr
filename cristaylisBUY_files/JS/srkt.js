@@ -62,6 +62,13 @@ shIFO(true);
 
 ////////////////////////////
 
+function ceni(a){
+b=a.parentElement.children[0].children[1];
+	cnacng(b);
+//	a.parentElement.children[3].innerHTML="5345345";
+//	a.parentElement.children[4].value="5345345";
+	}
+////////////////////////////
 
 
 var QQQ=document.getElementsByTagName("aside")[0];var qqq=document.getElementById("qqQQ");
@@ -72,6 +79,7 @@ if(document.getElementsByClassName("btn btn-info sc-cart-checkout")[0].classList
 sminka(true);
 document.getElementById("contact").style.display = "block";var CLN=QQQ.cloneNode(true);qqQQ.appendChild(CLN);
 
+qqQQ.children[0].children[2].children[3].children[0].children[0].children[0].innerHTML=pre1;
 qqQQ.children[0].children[2].children[3].children[1].remove();
 qqQQ.children[0].children[1].style="display:none;";
 

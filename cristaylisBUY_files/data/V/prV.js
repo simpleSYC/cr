@@ -1,4 +1,4 @@
-V=[
+var V=[
 V_0=["wiski glass","Artikl # 10/320","Volumen : 320 ml <br>Dimension (HxDxL) :<br>9,8 cm <br>  8,8 cm <br> 8,8 cm",52.15,57.94,68.82,25.1,""],
 V_1=["kapocuno glass","Artikl # 13/250","Volumen : 250 ml <br>Dimension (HxDxL) :<br>9.4 cm <br>  8 cm <br>  8 cm",71.12,97.13,11.5,21.78,""],
 V_2=["rakia glass","Artikl # 16/345","Volumen : 345 ml <br>Dimension (HxDxL) :<br>??? cm<br>? cm <br> ? cm",18.67,91.75,94.8,57.59,""],

@@ -1,3 +1,4 @@
+
 function DKMT_RDY(){
 document.getElementsByClassName("btn btn-info sc-cart-checkout")[0].addEventListener("click", openModal);}
  

@@ -38,7 +38,7 @@ function OPMD(){
 	MESTI_VALUE();
 }
 function racunka(){
-	document.getElementById("MOEbst").value=document.getElementsByClassName("sc-cart-subtotal")[0].innerHTML;	
+	document.getElementById("MOEbst").value=pre1;	
 
 	BST_ID(); ///< ova e toa za shifraa 
 //	document.getElementById("BST_id").innerHTML=document.getElementsByClassName("sc-cart-subtotal")[0].innerHTML;
@@ -52,8 +52,8 @@ var a_geter;//geterot od lista
 var qti_GO;
 var SRT_GO; //  
 var zz=[document.getElementsByClassName("IDI")];
-var m0,m1,m2,m3,m4,m5,m6,m7,m8,m9,m10,m11,m12,m13,m14,m15,m16,m17,m18;
-var M=[m0,m1,m2,m3,m4,m5,m6,m7,m8,m9,m10,m11,m12,m13,m14,m15,m16,m17,m18];
+var m0,m1,m2,m3,m4,m5,m6,m7,m8,m9,m10,m11,m12,m13,m14,m15,m16,m17,m18,m19,m20,m21,m22,m23,m24,m25,m26,m27,m28,m29;
+var M=[m0,m1,m2,m3,m4,m5,m6,m7,m8,m9,m10,m11,m12,m13,m14,m15,m16,m17,m18,m19,m20,m21,m22,m23,m24,m25,m26,m27,m28,m29];
 
 var NAZIV;
 
@@ -113,8 +113,9 @@ var nsv0;
 var nsv1;
 var nsv2;
 var nsv3;
+var nsv4;
 var ALL_NSV="";
-var NSV=[nsv0,nsv1,nsv2,nsv3];
+var NSV=[nsv0,nsv1,nsv2,nsv3,nsv4];
 
 var TXT_mail="";
 var TXT_name;
@@ -139,13 +140,15 @@ for(i=0;i<ElemtiZAemail.length;i++){
 	TXT[3]=document.getElementsByName("ADRS_STADT")[0].value;
 	TXT[4]=document.getElementsByName("ADRS_PLZ")[0].value;
 	
-	NSV[0]="Bestelung#ID:  			"+BID+"||";
-	NSV[1]="bestelung PRISE EURO: 			"+document.getElementsByClassName("sc-cart-subtotal")[0].innerHTML+"||";
-	NSV[2]="dein bestelung detals: "+TXT[0];
-	NSV[3]="||Detals fur bestelung empfanger :	" +TXT[1]+"|| ADRESE_STRASSE-			"+TXT[2]+"|| ADRESE_STADT-			"+TXT[3]+"|| ADRESE_PLZ-			"+TXT[4];
+	NSV[0]="	Date of Order:			"+DateOfOrder+"||";//BID
+	NSV[1]="	Bestelung#ID:			"+BID+"||";
+	NSV[2]="	bestelung PRISE EURO:			"+pre1+"||";
+	NSV[3]="	dein bestelung detals:			"+TXT[0];
+	NSV[4]="	||Detals fur bestelung empfanger :			" +TXT[1]+"|| ADRESE_STRASSE-			"+TXT[2]+"|| ADRESE_STADT-			"+TXT[3]+"|| ADRESE_PLZ-			"+TXT[4];
 
-for(i=0;i<4;i++){ALL_NSV=ALL_NSV+NSV[i]}
-    document.getElementsByName("KND_DTA")[0].value=ALL_NSV;
+//for(i=0;i<NSV.length;i++){ALL_NSV=ALL_NSV+NSV[i]} document.getElementsByName("KND_DTA")[0].value=ALL_NSV;    
+    document.getElementsByName("KND_DTA")[0].value=NSV[3]+NSV[4];
+	
 	
 //}
 }
@@ -155,7 +158,7 @@ for(i=0;i<4;i++){ALL_NSV=ALL_NSV+NSV[i]}
 
 var X=["&","$","#","%","^","*","=","~"];
 
-var res;var RES;var BID;var ELniza=[null,null,null,null,null];  
+var res="";var RES;var BID;var ELniza=[null,null,null,null,null];  
 var DateOfOrder;
 
 
@@ -171,7 +174,7 @@ for(i=0;i<5;i++){onadi(DRniza[i],i);}
 
 RES=ELniza[4]+ELniza[0]+ELniza[3]+ELniza[1]+ELniza[2];
 BID=d.getUTCMilliseconds()+"@"+RES;
-document.getElementById("BSTid").innerHTML=BID;
+//document.getElementById("BSTid").innerHTML=BID;
 document.getElementById("BST_id").value=BID;
 document.getElementById("DATEofORDER").value=DateOfOrder;
 
@@ -180,5 +183,5 @@ document.getElementById("DATEofORDER").value=DateOfOrder;
 function onadi(a,N){
 if      (a<26)   {v=a;   res = String.fromCharCode(97+v);  }
 else if (a<52)   {v=a-26;res = String.fromCharCode(65+v);  }
-else             {v=a-52;res = X[v];                       }ELniza[N]=res;}
+else             {v=a-52;res = X[v];                       }ELniza[N]=res.toString();}
 
